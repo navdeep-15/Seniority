@@ -2,7 +2,8 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import OnBoarding from '../onboarding/OnBoarding';
-import HomeScreen from '../home/HomeScreen'
+import Login from '../login/Login'
+import Otp from '../login/Otp';
 
 export default class RootNavigator extends React.Component {
     render() {
@@ -11,7 +12,8 @@ export default class RootNavigator extends React.Component {
             <NavigationContainer>
                 <Stack.Navigator initialRouteName={'OnBoarding'} screenOptions={{headerShown:false}}>
                     <Stack.Screen name="OnBoarding" component={OnBoarding} />
-                    <Stack.Screen name="HomeScreen" component={HomeScreen} />
+                    <Stack.Screen name="Login" component={Login} />
+                    <Stack.Screen name="Otp" component={Otp} />
                 </Stack.Navigator>
             </NavigationContainer>
         );

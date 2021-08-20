@@ -10,7 +10,7 @@ interface Props {
 export default class OnBoarding extends React.Component<Props> {
 
     onPressSkipButton = () => {
-        this.props.navigation.navigate("HomeScreen");
+        this.props.navigation.navigate("Login");
     }
     renderItems = ({ item }: { item: any }) => {
         return (
